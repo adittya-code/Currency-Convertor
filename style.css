@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#id01{
+    height: 400px;
+    width: 400px;
+    background-color: aliceblue;
+    text-align: center;
+    margin-top:130px;
+    margin-left: 600px;
+    border: 1px solid rgb(197, 189, 205);
+    border-radius: 8%;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+}
+
+
+#id02{
+    text-align: start;
+    margin-top: 30px;
+    margin-left: 24px;
+    
+}
+
+#id03{
+
+    margin-top: 10px;
+    height: 40px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+
+
+#container{
+     display: flex;
+     align-items: center;
+}
+
+
+#para  {
+    position: relative;
+    bottom:15px;
+    left: 30px;
+}
+
+#id07 {
+     position: relative;
+    bottom:15px;
+    left: 86px;
+}
+
+img {
+    width: 40px;
+}
+
+i {
+     position: relative;
+     top: 30px;
+     left: 40px;
+}
+
+#id04{
+    display: flex;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+}
+
+#id05{
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+    left: 70px;
+    top: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color:white;
+
+}
+
+
+
+#curr{
+    height: 40px;
+    width: 80px;
+    border-radius:10px;
+    border: none;
+    outline: none;
+  
+}
+
+#Currency{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+
+#id06{
+    position: relative;
+    bottom:-40px;
+}
+
+
+button{
+    margin-top: 70px;
+    height: 40px;
+    width: 350px;
+    border-radius: 9px;
+    background-color: rgb(118, 147, 208);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    cursor: pointer;
+}
