@@ -1,4 +1,4 @@
-Currency Converter Web App
+Currency Converter Web App :-
 A simple Currency Converter Web Application built using HTML, CSS, and JavaScript that converts currencies using a live exchange rate API.
 This project demonstrates API integration, DOM manipulation, and dynamic UI updates using JavaScript.
 
