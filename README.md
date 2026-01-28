@@ -3,7 +3,7 @@ A simple Currency Converter Web Application built using HTML, CSS, and JavaScrip
 This project demonstrates API integration, DOM manipulation, and dynamic UI updates using JavaScript.
 
 🌍 Live Demo
-
+https://adittya-code.github.io/Currency-Convertor/
 
 ✨ Features
 
@@ -23,8 +23,8 @@ This project demonstrates API integration, DOM manipulation, and dynamic UI upda
 5) Flags API
 
 🔗 API Used
-Exchange Rate API:  https://api.frankfurter.app/latest?from=USD&to=INR
-Flags API: https://flagsapi.com/US/flat/64.png
+1) Exchange Rate API:  https://api.frankfurter.app/latest?from=USD&to=INR
+2) Flags API: https://flagsapi.com/US/flat/64.png
 
 📁 Project Structure
 
@@ -36,7 +36,7 @@ currency-convertor
 4)  list.js      # Currency country codes list
 
 👨‍💻 Author
-Aditya
+   Aditya
 
 ⭐ Support
 If you like this project, please ⭐ star the repository.
