@@ -9,7 +9,7 @@ https://adittya-code.github.io/Currency-Convertor/
 
 1) 💱 Convert currency from one country to another
 2) 🌎 Supports multiple international currencies along with country flags automatically
-3) ⚡ Real-time exchange rate using Frankfurter API
+3) ⚡ Real-time exchange rate using API
 4) 📱 Responsive and simple UI
 5) 🎯 Default conversion: USD → INR
 
@@ -19,11 +19,11 @@ https://adittya-code.github.io/Currency-Convertor/
 1) HTML5
 2) CSS3
 3) JavaScript (Fetch API)
-4) Frankfurter Currency API
+4) Exchange Rate API
 5) Flags API
 
 🔗 API Used
-1) Exchange Rate API:  https://api.frankfurter.app/latest?from=USD&to=INR
+1) Exchange Rate API: https://open.er-api.com/v6/latest/{base_currency}
 2) Flags API: https://flagsapi.com/US/flat/64.png
 
 📁 Project Structure
