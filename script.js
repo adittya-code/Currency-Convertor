@@ -43,24 +43,36 @@ for (let select of dropdowns){
 
 
 
-const updateExchangeRate = async () =>{
-    let amount = document.querySelector("#id03");
-    let amountval = amount.value;
-    if (amountval === "" || amountval < 1){
-        amountval = 1;
-        amount.value = "1";
+const updateExchangeRate = async () => {
+    try {
+        let amountval = amount.value;
+
+        if (amountval === "" || amountval < 1){
+            amountval = 1;
+            amount.value = "1";
+        }
+
+        let URL = `https://api.frankfurter.app/latest?from=${fromcurr.value}&to=${tocurr.value}`;
+        let proxy = "https://api.allorigins.win/raw?url=";
+
+        let response = await fetch(proxy + encodeURIComponent(URL));
+
+        if (!response.ok) throw new Error("Network issue");
+
+        let data = await response.json();
+
+        if (!data.rates) throw new Error("Invalid API response");
+
+        let rate = data.rates[tocurr.value];
+        let finalamt = amountval * rate;
+
+        msg.innerText = `${amountval} ${fromcurr.value} = ${finalamt.toFixed(2)} ${tocurr.value}`;
+
+    } catch (err) {
+        console.error(err);
+        msg.innerText = "❌ Failed to fetch exchange rate";
     }
-
-let URL = `https://api.frankfurter.app/latest?from=${fromcurr.value}&to=${tocurr.value}`;
-let proxy = "https://corsproxy.io/?";
-
-let response = await fetch(proxy + encodeURIComponent(URL));
-    let data = await response.json();
-    let rate = data.rates[tocurr.value];
-
-    let finalamt = (amountval * rate)
-    msg.innerText = `${amountval} ${fromcurr.value} = ${finalamt} ${tocurr.value}`;
-}
+};
 
 
 
