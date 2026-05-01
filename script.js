@@ -51,9 +51,10 @@ const updateExchangeRate = async () =>{
         amount.value = "1";
     }
 
+let URL = `https://api.frankfurter.app/latest?from=${fromcurr.value}&to=${tocurr.value}`;
+let proxy = "https://corsproxy.io/?";
 
-   let URL = `https://api.frankfurter.app/latest?from=${fromcurr.value}&to=${tocurr.value}`;
-    let response = await fetch(URL);
+let response = await fetch(proxy + encodeURIComponent(URL));
     let data = await response.json();
     let rate = data.rates[tocurr.value];
 
